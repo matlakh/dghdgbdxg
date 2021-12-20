@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.body__muted {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  background: rgba(0, 0, 0, 0.3);
+  border-style: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.body__muted.muted {
+  opacity: 1;
+  z-index: 20;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
